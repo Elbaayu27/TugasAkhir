@@ -1,0 +1,143 @@
+API Documentasi
+
+1. LOGIN
+	url: /api-mobile/login/
+	method: POST
+	headers: {
+		Content-Type: 'application/json'
+	}
+	body: {
+		"username": "tes",
+		"password": "password"
+	}
+	
+2. LIST ADMIN
+	url: /api-mobile/admin/
+	method: GET
+	headers: {
+		Content-Type: 'application/json'
+	}
+2. CREATE ADMIN
+	url: /api-mobile/admin/
+	method: POST
+	headers: {
+		Content-Type: 'application/json'
+	}
+	body: {
+		"username" : "test",
+		"nik" : "nik",
+		"nama": "nama",
+		"jabatan": "jabatan",
+		"token":null,
+		"kategori": {
+					"kategori": 1/2/3
+				},
+		"password" : "password",
+		"status_admin" : "Super Admin" / "Admin"
+	}
+	
+3. UPDATE ADMIN / TOKEN FIREBASE
+	url: /api-mobile/admin/{id_admin}/
+	method: POST
+	headers: {
+		Content-Type: 'application/json'
+	}
+	body: {
+		"username": "username",
+		"nik" : "nik",
+		"nama" : "nama"
+		"jabatan": "jabatan",
+		"kategori": {
+					"kategori": 1/2/3
+				},
+		"password" : "pass",
+		"status_admin": "SUPER ADMIN" / "ADMIN"
+	}
+	
+4. DELETE ADMIN
+	url: /api-mobile/admin/{id_admin}/
+	method: DELETE
+	headers: {
+		Content-Type: 'application/json'
+	}
+	
+5. LIST COMPLAINT
+	url: /api-mobile/complaint/
+	method: GET
+	headers: {
+		Content-Type: 'application/json'
+	}
+
+6. LIST COMPLAINT CATEGORY
+	url: /api-mobile/complaint-kategori/{id_kategori}/
+	method: GET
+	headers: {
+		Content-Type: 'application/json'
+	}
+
+7. UPDATE STATUS COMPLAINT
+	url: /api-mobile/complaint/
+	method: POST
+	headers: {
+		Content-Type: 'application/json'
+	}
+	body: {
+		"id": 1,
+		"id_user":1,
+		"keluhan": "Keluhan",
+		"sentimen": "Negatif",
+		"status" : {
+			"status" : 3
+		},
+		"kategori": {
+			"kategori":2
+		}
+	}
+8. LIST STATUS
+	url: /api-mobile/status/
+	method : GET
+	headers: {
+		Content-Type: 'application/json'
+	}
+
+8. LIST KATEGORI
+	url: /api-mobile/kategori/
+	method : GET
+	headers: {
+		Content-Type: 'application/json'
+	}
+	
+========================================================== API WEB ===================================================
+8. CREATE COMPLAINT RAW
+	url: /api-web/complaint/
+	method: POST
+	headers: {
+		Content-Type: 'application/json'
+	}
+	body: {
+		"nim" : "nim",
+		"email": "email",
+		"keluhan" : "keluhan"
+	}
+
+9. SINGLE COMPLAINT CREATE
+	url: http://localhost:8000/api-mobile/complaint-create/
+	method: POST
+	headers: {
+		Content-Type: 'application/json'
+	}
+	body : {
+		"keluhan" : "keluhan"
+	}
+	
+STATUS :
+1. Belum Ditanggapi
+2. Sudah Ditanggapi
+3. Report
+4. Pending
+
+Kategori :
+1.Akademik
+2.Keuangan
+3.Sarana Prasarana
+4.Tenaga Pengajar (Dosen)

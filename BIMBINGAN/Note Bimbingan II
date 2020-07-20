@@ -1,0 +1,32 @@
+=== RANGKUMAN BIMBINGAN KE-2===
+
+A. Kasih Gambaran / Alur Kerja Aplikasinya
+
+
+1. MODEL
+
+Model tuh apa ?
+Dibuatnya pake library apa ?
+Preprocessing tuh apa ?
+Lowercase, Stemming, Remove Stopwords ?
+Feature extraction apaan ? tujuannya ?
+Classifier ?
+Pipeline ?
+
+2. API
+
+Masing" endpoint gunanya apa ?
+Kenapa pake django ?
+
+3. Web
+Kenapa pake rjs ?
+Tunjukin tiap2 menu ?
+
+4. Mobile
+Isi ppt nya !
+Tunjukin appnya
+
+
+#NOTE
+Pastiin teknis aplikasinya berjalan lancar
+dan Pelajarin semua yang udah lu pelajarin
